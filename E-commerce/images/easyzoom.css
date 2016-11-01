@@ -6,15 +6,12 @@
 }
 .tab-panel{
 	background-color: rgb(0,0,0);
-	border-top: rgba(49,49,49,1);
-	border-bottom: rgba(49,49,49,1);
+	border-top-color: rgba(49,49,49,1);
+	border-bottom-color: rgba(49,49,49,1);
 	height: 67px;
 	position: relative;
 	letter-spacing: 0.2em;
 	min-width: 1200px;
-}
-.container{
-	position: 0px;
 }
 .panel-heading{
 	padding:0px;
