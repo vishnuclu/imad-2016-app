@@ -1,0 +1,130 @@
+/**
+ * EasyZoom core styles
+ */
+ body{
+	background-color: rgba(228,228,228,1);
+}
+.tab-panel{
+	background-color: rgb(0,0,0);
+	border-top: rgba(49,49,49,1);
+	border-bottom: rgba(49,49,49,1);
+	height: 67px;
+	position: relative;
+	letter-spacing: 0.2em;
+	min-width: 1200px;
+}
+.container{
+	position: 0px;
+}
+.panel-heading{
+	padding:0px;
+}
+.panel-content{
+	padding: 0px;
+	
+}
+.dropdown-menu{
+	transform: translateX(-3px);
+}
+#veste{
+	font:normal normal normal 25px/1.4em sans-serif;
+	color: #939393;
+	padding: 5px 10px 0px 10px;
+}
+#veste:hover{
+	color: #FDFDFD;
+	transition: 0.6s ease 0s;
+	text-decoration: none;
+}
+
+#home{
+	font:normal normal normal 15px/1.4em sans-serif;
+	color: #939393;
+	padding: 0px 10px;
+}
+#collection{
+	font:normal normal normal 15px/1.4em sans-serif;
+	color: #939393;
+	padding: 0px 10px;
+	transition: 0.6s;
+}
+#women,#men,#sale,#accessories{
+	padding: 5px 5px 5px 1px;
+}
+#lookback{
+	font:normal normal normal 15px/1.4em sans-serif;
+	color: #939393;
+	padding: 0px 10px;
+}
+#customercare{
+	font:normal normal normal 15px/1.4em sans-serif;
+	color: #939393;
+	padding: 0px 10px;
+}
+#visitus{
+	font:normal normal normal 15px/1.4em sans-serif;
+	color: #939393;
+	padding: 0px 10px;
+}
+.easyzoom {
+	position: relative;
+
+	/* 'Shrink-wrap' the element */
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.easyzoom img {
+	vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+	cursor: progress;
+}
+
+.easyzoom.is-ready img {
+	cursor: crosshair;
+}
+
+.easyzoom.is-error  img {
+	cursor: not-allowed;
+}
+
+.easyzoom-notice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 0 10px #888;
+}
+
+.easyzoom-flyout {
+	position:absolute;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFF;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.easyzoom--overlay .easyzoom-flyout {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.easyzoom--adjacent .easyzoom-flyout {
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	margin-left: 20px;
+}

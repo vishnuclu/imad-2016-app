@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In Form</title>
+	<link rel="stylesheet" type="text/css" href="./login.css">
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+
+$(document).ready(function(){
+	
+	$('.input1').blur(function() {
+  	var inputVal = $('.input1').val();
+ 	 if (inputVal) {
+ 	 $('.label-text1').removeAttr('id','label-texta');
+    $('.label-text1').attr('id','value-exists');
+  } else {
+  	if($('.label-text1').attr('Id') == 'value-exists')
+    $('.label-text1').removeAttr('id','value-exists');
+    $('.label-text1').attr('id','label-texta');
+  }
+});
+	$('.input2').blur(function() {
+  	var inputVal = $('.input2').val();
+ 	 if (inputVal) {
+ 	 $('.label-text2').removeAttr('id','label-textb');
+    $('.label-text2').attr('id','value-exists');
+    } 
+    else {
+  	if($('.label-text2').attr('Id') == 'value-exists')
+    $('.label-text2').removeAttr('id','value-exists');
+    $('.label-text2').attr('id','label-textb');
+  }
+});
+});
+  
+</script>
+</head>
+<body>
+<form>
+	<label>
+		<input type="text" name="FirName" class="input1" />
+		<div class="label-text1" id="label-texta">FIRST NAME</div>
+	</label>
+	<label>
+		<input type="password" name="Password" class="input2" />
+		<div class="label-text2" id="label-textb">PASSWORD</div>		
+	</label>
+	<button class="submit">SUBMIT</button>
+</form>
+</body>
+</html>
