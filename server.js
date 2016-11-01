@@ -7,7 +7,6 @@ app.use(morgan('combined'));
 
 app.get('/',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main.html'));
-   res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
 });
 
 app.get('/index.html',function(req,res){
