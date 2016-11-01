@@ -6,10 +6,10 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/',function(req,res){
-   res.sendFile(path.join(__dirname,'ui','index.html')); 
+   res.sendFile(path.join(__dirname,'E-commerce','index.html')); 
 });
 
-app.get('/article-one',function(req,res){
+app.get('/index.html',function(req,res){
     res.send('Article-one is requested and is served here');
 });
 
