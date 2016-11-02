@@ -70,7 +70,7 @@ body{
 	position: absolute;
 	top: 0px;
 	left: 490px;
-	padding-top: 190px;
+    margin-top: 190px;
 	color: #313131;
 	word-wrap: break-word;
 	justify-content: center;
@@ -85,7 +85,7 @@ body{
 .imboysright{
 	top: 0px;
 	left: 0px;
-	padding-top: 190px;
+	margin-top: 190px;
 	color: #313131;
 	word-wrap: break-word;
 	justify-content: center;
@@ -100,12 +100,14 @@ body{
 }
 .imag img {
   max-width: 100%;
-  
+  -o-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 .imag:hover img {
+    -ms-transform: sscale(1.4);  
+    -o-transform: scale(1.4);
   -moz-transform: scale(1.4);
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
