@@ -9,8 +9,8 @@ app.get('/',function(req,res){
    res.sendFile(path.join(__dirname,'ui','index.html'));
 });
 //app.get('/main-style.css',function(req,res){
-   res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
-});
+//   res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
+//});
 app.get('/index.html',function(req,res){
     res.send('Article-one is requested and is served here');
 });
