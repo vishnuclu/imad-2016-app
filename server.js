@@ -11,6 +11,9 @@ app.get('/',function(req,res){
 app.get('/E-commerce/main-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
 });
+app.get('/images/im1.jpg',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/images','im1.jpg'));
+});
 app.get('/index.html',function(req,res){
     res.send('Article-one is requested and is served here');
 });
