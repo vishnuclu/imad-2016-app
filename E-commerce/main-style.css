@@ -244,13 +244,3 @@ a:hover
 	left:25%; 
 	height: 130px;
 }
-.custom{
-	position: absolute;
-	left: 30%;
-}
-img:hover{
-	transform: scale(2.6);
-	position: relative;
-	bottom: 1%;
-
-}
