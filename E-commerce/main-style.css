@@ -244,3 +244,8 @@ a:hover
 	left:25%; 
 	height: 130px;
 }
+.custom{
+    position:absolute;
+    left:30%;
+}
+}
