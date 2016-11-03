@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/E-commerce/main-style.css">
+	<link rel="stylesheet" type="text/css" href="./index-style.css">
 	<link rel="preconnect" type="text/css" href="//fonts.googleapis.com">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -61,7 +61,7 @@ $(document).ready(function() {
 			<ul>
 				<li style="float: left;position: absolute;left: 50px;top: 20px;"><span id="veste"> VESTE</span></li>
 				<ul class="nav nav-pills" style="position: absolute;left: 250px;top: 15px;">
-					<li ><a href="#" onclick="location.reload();location.href='/E-commerce/main.html'"><span id="home"> HOME</span></a></li>
+					<li ><a href="#" onclick="location.reload();location.href='index.html'"><span id="home"> HOME</span></a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" style="pointer-events: none;"><span id="collection">COLLECTION</span></a>
 						<ul class="dropdown-menu" style="background-color: black;color: white;">
@@ -78,63 +78,61 @@ $(document).ready(function() {
 			</ul>
 		</div>
 	</div>
-	<div class="container" style="margin-left: 10%;">
+	<div class="container-fluid" style="margin-left: 2%;">
 		<div class="panel-content">
 			<div class="imgirls">
-				<a href="#"><img src="/E-commerce/images/im1.jpg"></a>
+				<a href="#"><img src="./images/im1.jpg" width="625px" height="575px"></a>
 				<div class="imgirlsright">
-					<span style="font-size: 42px;padding-left: 70px;">SULTRY & SMART</span><br>
-					<span style="padding-left: 130px;font-size: 23px;">HOT SPRING LOOKS</span><br>
-					<hr width="20%">
-					<span style="padding-left: 175px;font-size: 23px;">Shop Women</span>
+					<span style="font-size: 42px;padding-left: 120px;">SULTRY & SMART</span><br>
+					<span style="padding-left: 180px;font-size: 23px;">HOT SPRING LOOKS</span><br><br>
+					<span style="padding-left: 230px;font-size: 23px;">Shop Women</span>
 				</div>	
 			</div>
 			<div class="imboys">
-				<div class="imboysright">
-					<span style="font-size: 42px;padding-left: 70px;color: white;">ELEGANT & SLICK</span><br>
-					<span style="padding-left: 130px;font-size: 23px;color: white;">GET READY FOR SUMMER</span><br>
-					<hr width="20%">
-					<span style="padding-left: 195px;font-size: 23px;color: white;">Shop Men</span>
+				<div class="imboysright" style="color: white;">
+					<span style="font-size: 42px;padding-left: 120px;">ELEGANT & SLICK</span><br>
+					<span style="padding-left: 160px;font-size: 23px;">GET READY FOR SUMMER</span><br><br>
+					<span style="padding-left: 230px;font-size: 23px;">Shop Men</span>
 				</div>	
-				<a href="#" style="position:absolute;left: 490px;top: 0px;"><img src="/E-commerce/images/im2.jpg"></a>
+				<a href="#" style="position:absolute;left: 626px;top: 0px;"><img src="./images/im2.jpg" width="625px" height="575px"></a>
 			</div>
-			<div class="newarrivals">
-				<div style="text-align: center;font-size: 40px;font-family:Tahoma;padding:30px; ">NEW ARRIVALS</div>
-				<div style="float: left;">
-					<div class="imag"  style="width: 315px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
-						<img src="./images/girlsd1.jpg">
+			<div class="newarrivals" style="width: 1200px;height: 650px;">
+				<div style="text-align: center;position: relative;font-size: 40px;font-family:Tahoma;padding:30px; ">NEW ARRIVALS</div>
+				<div style="position: absolute;left: 0;">
+					<div class="imag"  style="width: 400px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
+						<img src="./images/girlshome1.png" height="402px">
 					</div>
-					<div class="bt" onmouseover="myfunc11()" onmouseout="myfunc12()" style="padding-left:5px;margin-left: 25px; font-size: 18px;">
+					<div class="bt" onmouseover="myfunc11()" onmouseout="myfunc12()" style="margin-left: 25px; font-size: 18px;">
 						<button class="bt-dat"><span id="dresname11"> PLEATED SKIRT </span><br> <span id="view1">VIEW DETAILS</span> <br> <span id="dresname12">$49.00</span></button>
 					</div>
 				</div>
-				<div style="float: left;">
-					<div class="imag" style="width: 315px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
-						<img src="./images/boys4.jpg">
+				<div style="position: absolute;left: 425px;">
+					<div class="imag" style="width: 400px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
+						<img src="./images/boyshome1.png" height="402px">
 					</div>
-					<div class="bt" onmouseover="myfunc21()" onmouseout="myfunc22()" style="padding-left:5px;margin-left: 25px; font-size: 18px; ">
+					<div class="bt" onmouseover="myfunc21()" onmouseout="myfunc22()" style="margin-left: 25px; font-size: 18px; ">
 						<button class="bt-dat" ><span id="dresname21"> SLIM FIT CHINOS </span><br> <span id="view2">VIEW DETAILS</span> <br> <span id="dresname22">$49.00</span></button>
 					</div>
 				</div>
-				<div style="float: left;">
-					<div class="imag" style="width: 315px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
-						<img src="./images/girlsd3.jpg">
+				<div style="position: absolute;left: 850px;">
+					<div class="imag" style="width: 400px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
+						<img src="./images/girlshome2.png" height="402px">
 					</div>
-					<div class="bt" onmouseover="myfunc31()" onmouseout="myfunc32()" style="padding-left:5px;margin-left: 25px;font-size: 18px; ">
+					<div class="bt" onmouseover="myfunc31()" onmouseout="myfunc32()" style="margin-left: 25px;font-size: 18px; ">
 						<button class="bt-dat"><span id="dresname31"> PRINTED CHIFFON DRESS </span><br> <span id="view3">VIEW DETAILS</span> <br> <span id="dresname32">$49.00</span></button>
 					</div>
 				</div>
 			</div>
-			<div class="subscribe" style="clear: both;">
+			<div class="subscribe">
 				<div style="text-align: center;font-size: 40px;font-family:Tahoma;padding:30px;">GET ON THE LIST<br><span style="font-size: 25px;"> and be the first to shop new arrivals and exclusive promotions</span></div>
 				<input type="email" name="E-mail" placeholder="Email Address" style="background-color: #eee;font-size: 12px;padding: 7px 8px;border-radius: 5px;width: 88%;margin-left: 3%;">
 				<button style="background-color: rgba(49,49,49,1);border-color: rgba(49,49,49,1);color: white;font-size: 12px;padding: 7px 8px;margin-top: 5px;margin-left: 3%;width: 88%;">Subscribe Now</button>
 			</div>
-			<div style="margin-top: 50px;margin-left: -1%;width: 95%;background-color: rgba(49,49,49,1);position: relative;">
-				<img src="/E-commerce/images/im3.jpg" style="float: left;padding: 40px;">
-				<div style="position:absolute;color: white;top: 50%;left: 13%;font-size:20px;text-align: center; ">SWOON-WORTHY<br><span style="font-size: 40px;">ACCESSORIES</span></div>
-				<img src="/E-commerce/images/im4.jpg" style="padding: 40px;">
-				<div style="position:absolute;color: white;top: 50%;right: 12%;font-size:20px;text-align: center; ">WINTER SALE<br><span style="font-size: 40px;">NOW 30% OFF</span></div>
+			<div style="margin-top: 50px;width: 100%;height: 600px;background-color: rgba(49,49,49,1);position: relative;">
+				<img src="./images/im3.jpg" height="575px;" style="float: left;padding: 40px;">
+				<div style="position:absolute;color: white;top: 45%;left:180px;font-size:20px;text-align: center; ">SWOON-WORTHY<br><span style="font-size: 40px;">ACCESSORIES</span></div>
+				<img src="./images/im4.jpg" height="575px;" style="padding: 40px;position: absolute;left:600px; ">
+				<div style="position:absolute;color: white;top: 45%;right:190px;font-size:20px;text-align: center; ">WINTER SALE<br><span style="font-size: 40px;">NOW 30% OFF</span></div>
 			</div>
 		</div>
 		<div class="foot" style="color:#939393;width:100%;height:500px;padding-top:50px;position: relative;font-size: 15px;">
@@ -157,7 +155,7 @@ $(document).ready(function() {
 			</div>
 
 			<div style="position:relative;top:160px;color:#cdcdcd	;font-style:helvetica;background-color: #242323;text-align:center;width:100%;height: 12%;min-width: 500px;">
-				<div style="padding-top: 20px">Â© 2016 by VESTE. Proudly created with nothing</div>
+				<div style="padding-top: 20px">© 2016 by VESTE. Proudly created with nothing</div>
 			</div>
 		</div>
 	</div>
