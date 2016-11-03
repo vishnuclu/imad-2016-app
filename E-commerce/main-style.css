@@ -69,6 +69,7 @@ body{
 	top: 0;
 	left: 625px;
 	color: #313131;
+	padding-top:190px;
 	word-wrap: break-word;
 	justify-content: center;
 	background-color: rgba(255,223,237,1);
@@ -80,6 +81,7 @@ body{
 	position: relative;
 }
 .imboysright{
+    padding-top:190px;
 	top: 0px;
 	left: 0px;
 	color: #313131;
