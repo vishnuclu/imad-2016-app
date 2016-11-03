@@ -8,6 +8,9 @@ app.use(morgan('combined'));
 app.get('/',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main.html'));
 });
+app.get('/E-commerce/main.html',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce','main.html'));
+});
 app.get('/E-commerce/main-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
 });
