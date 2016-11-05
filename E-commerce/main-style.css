@@ -67,7 +67,7 @@ body{
 .imgirlsright{
 	position: absolute;
 	top: 0;
-	left: 625px;
+	left: 675px;
 	color: #313131;
 	padding-top:190px;
 	word-wrap: break-word;
@@ -88,8 +88,8 @@ body{
 	word-wrap: break-word;
 	justify-content: center;
 	background-color: rgba(163,189,199,1);
-	width: 625px;
-	height: 575px;
+	width: 675px;
+	height: 600px;
 	font-family: arial,helvetica,sans-serif;
 }
 .imag {
