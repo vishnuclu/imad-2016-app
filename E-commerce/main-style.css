@@ -12,10 +12,10 @@ body{
 	
 }
 .panel-heading{
-	padding:0px;
+	padding:0;
 }
 .panel-content{
-	padding: 0px;
+	padding: 0;
 	
 }
 .dropdown-menu{
@@ -24,7 +24,7 @@ body{
  #veste{
 	font:normal normal normal 25px/1.4em sans-serif;
 	color: #939393;
-	padding: 5px 10px 0px 10px;
+	padding: 5px 10px 0 10px;
 }
 #veste:hover{
 	color: #FDFDFD;
@@ -49,17 +49,17 @@ body{
 #lookback{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 #customercare{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 #visitus{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 .imgirls{
 	position: relative;
@@ -82,8 +82,8 @@ body{
 }
 .imboysright{
     padding-top:190px;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	color: #313131;
 	word-wrap: break-word;
 	justify-content: center;
@@ -133,7 +133,7 @@ body{
 	animation:bannermove 40s ease-out infinite;
 }
 @keyframes "bannermove"{
-	0%{margin-left: 0px;}
+	0%{margin-left: 0;}
 	5%{margin-left:-440px;}
 	10%{margin-left:-440px;}
 	15%{margin-left:-880px;}
@@ -156,7 +156,7 @@ body{
 	100%{margin-left:-4400px;}
 }
 @-moz-keyframes "bannermove"{
-	0%{margin-left: 0px;}
+	0%{margin-left: 0;}
 	5%{margin-left:-440px;}
 	10%{margin-left:-440px;}
 	15%{margin-left:-880px;}
@@ -179,7 +179,7 @@ body{
 	100%{margin-left:-4400px;}
 }
 @-o-keyframes "bannermove"{
-	0%{margin-left: 0px;}
+	0%{margin-left: 0;}
 	5%{margin-left:-440px;}
 	10%{margin-left:-440px;}
 	15%{margin-left:-880px;}
@@ -203,7 +203,7 @@ body{
 }
 
 @-webkit-keyframes "bannermove"{
-	0%{margin-left: 0px;}
+	0%{margin-left: 0;}
 	5%{margin-left:-440px;}
 	10%{margin-left:-440px;}
 	15%{margin-left:-880px;}
