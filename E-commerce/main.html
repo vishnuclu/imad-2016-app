@@ -1,248 +1,163 @@
-body{
-	background-color: rgba(228,228,228,1);
-	min-width: 1200px;
-}
-.tab-panel{
-	background-color: rgb(0,0,0);
-	border-top: rgba(49,49,49,1);
-	border-bottom: rgba(49,49,49,1);
-	height: 67px;
-	position: relative;
-	letter-spacing: 0.2em;
-	
-}
-.panel-heading{
-	padding:0px;
-}
-.panel-content{
-	padding: 0px;
-	
-}
-.dropdown-menu{
-	transform: translateX(-3px);
-}
- #veste{
-	font:normal normal normal 25px/1.4em sans-serif;
-	color: #939393;
-	padding: 5px 10px 0px 10px;
-}
-#veste:hover{
-	color: #FDFDFD;
-	transition: 0.6s ease 0s;
-	text-decoration: none;
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/E-commerce/main-style.css">
+	<link rel="preconnect" type="text/css" href="//fonts.googleapis.com">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+<script type="text/javascript">
+	function myfunc21() {
+		document.getElementById('dresname21').style.visibility = "hidden";
+		document.getElementById('dresname22').style.visibility = "hidden";
+		document.getElementById('view2').style.visibility = "visible";
+	}
+	function myfunc22() {
+		document.getElementById('dresname21').style.visibility = "visible";
+		document.getElementById('dresname22').style.visibility = "visible";
+		document.getElementById('view2').style.visibility = "hidden";
+	}
+	function myfunc11() {
+		document.getElementById('dresname11').style.visibility = "hidden";
+		document.getElementById('dresname12').style.visibility = "hidden";
+		document.getElementById('view1').style.visibility = "visible";
+	}
+	function myfunc12() {
+		document.getElementById('dresname11').style.visibility = "visible";
+		document.getElementById('dresname12').style.visibility = "visible";
+		document.getElementById('view1').style.visibility = "hidden";
+	}
+	function myfunc31() {
+		document.getElementById('dresname31').style.visibility = "hidden";
+		document.getElementById('dresname32').style.visibility = "hidden";
+		document.getElementById('view3').style.visibility = "visible";
+	}
+	function myfunc32() {
+		document.getElementById('dresname31').style.visibility = "visible";
+		document.getElementById('dresname32').style.visibility = "visible";
+		document.getElementById('view3').style.visibility = "hidden";
+	}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.dropdown').hover(function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+		}, function() {
+  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+});
+</script>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="cart-panel">
+		</div>
+		<div class="tab-panel">
+			<ul>
+				<li style="float: left;position: absolute;left: 50px;top: 20px;"><span id="veste"> VESTE</span></li>
+				<ul class="nav nav-pills" style="position: absolute;left: 250px;top: 15px;">
+					<li ><a href="#" onclick="location.reload();location.href='index.html'"><span id="home"> HOME</span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" style="pointer-events: none;"><span id="collection">COLLECTION</span></a>
+						<ul class="dropdown-menu" style="background-color: black;color: white;">
+							<li id="women"><a href="#" onclick="location.reload();location.href='women.html'"><span > WOMEN</span></a></li>
+							<li id="men"><a href="#" onclick="location.reload();location.href='men.html'"><span > MEN</span></a></li>
+							<li id="accessories"><a href="#" onclick="location.reload();location.href='accessories.html'"><span >ACCESSORIES</span></a></li>
+							<li id="sale"><a href="#" onclick="location.reload();location.href='sale.html'"><span > SALE</span></a></li>
+						</ul>
+					</li>				
+					<li ><a href="#" onclick="location.reload();location.href='lookbook.html'"><span id="lookback"> LOOKBOOK</span></a></li>
+					<li ><a href="#"><span id="customercare"> CUSTOMER CARE</span></a></li>
+					<li ><a href="#"><span id="visitus"> VISIT US</span></a></li>
+				</ul>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-left: 2%;">
+		<div class="panel-content">
+			<div class="imgirls">
+				<a href="#"><img src="/E-commerce/images/im1.jpg" width="625px" height="575px"></a>
+				<div class="imgirlsright">
+					<span style="font-size: 42px;padding-left: 120px;">SULTRY & SMART</span><br>
+					<span style="padding-left: 180px;font-size: 23px;">HOT SPRING LOOKS</span><br><br>
+					<span style="padding-left: 230px;font-size: 23px;">Shop Women</span>
+				</div>	
+			</div>
+			<div class="imboys">
+				<div class="imboysright" style="color: white;">
+					<span style="font-size: 42px;padding-left: 120px;">ELEGANT & SLICK</span><br>
+					<span style="padding-left: 160px;font-size: 23px;">GET READY FOR SUMMER</span><br><br>
+					<span style="padding-left: 230px;font-size: 23px;">Shop Men</span>
+				</div>	
+				<a href="#" style="position:absolute;left: 626px;top: 0px;"><img src="/E-commerce/images/im2.jpg" width="625px" height="575px"></a>
+			</div>
+			<div class="newarrivals" style="width: 1200px;height: 650px;">
+				<div style="text-align: center;position: relative;font-size: 40px;font-family:Tahoma;padding:30px; ">NEW ARRIVALS</div>
+				<div style="position: absolute;left: 0;">
+					<div class="imag"  style="width: 400px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
+						<img src="./images/girlshome1.png" height="402px">
+					</div>
+					<div class="bt" onmouseover="myfunc11()" onmouseout="myfunc12()" style="margin-left: 25px; font-size: 18px;">
+						<button class="bt-dat"><span id="dresname11"> PLEATED SKIRT </span><br> <span id="view1">VIEW DETAILS</span> <br> <span id="dresname12">$49.00</span></button>
+					</div>
+				</div>
+				<div style="position: absolute;left: 425px;">
+					<div class="imag" style="width: 400px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
+						<img src="./images/boyshome1.png" height="402px">
+					</div>
+					<div class="bt" onmouseover="myfunc21()" onmouseout="myfunc22()" style="margin-left: 25px; font-size: 18px; ">
+						<button class="bt-dat" ><span id="dresname21"> SLIM FIT CHINOS </span><br> <span id="view2">VIEW DETAILS</span> <br> <span id="dresname22">$49.00</span></button>
+					</div>
+				</div>
+				<div style="position: absolute;left: 850px;">
+					<div class="imag" style="width: 400px;height: 407px; padding: 5px;padding-bottom: 0px; margin-left: 25px;">		
+						<img src="./images/girlshome2.png" height="402px">
+					</div>
+					<div class="bt" onmouseover="myfunc31()" onmouseout="myfunc32()" style="margin-left: 25px;font-size: 18px; ">
+						<button class="bt-dat"><span id="dresname31"> PRINTED CHIFFON DRESS </span><br> <span id="view3">VIEW DETAILS</span> <br> <span id="dresname32">$49.00</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="subscribe">
+				<div style="text-align: center;font-size: 40px;font-family:Tahoma;padding:30px;">GET ON THE LIST<br><span style="font-size: 25px;"> and be the first to shop new arrivals and exclusive promotions</span></div>
+				<input type="email" name="E-mail" placeholder="Email Address" style="background-color: #eee;font-size: 12px;padding: 7px 8px;border-radius: 5px;width: 88%;margin-left: 3%;">
+				<button style="background-color: rgba(49,49,49,1);border-color: rgba(49,49,49,1);color: white;font-size: 12px;padding: 7px 8px;margin-top: 5px;margin-left: 3%;width: 88%;">Subscribe Now</button>
+			</div>
+			<div style="margin-top: 50px;width: 100%;height: 600px;background-color: rgba(49,49,49,1);position: relative;">
+				<img src="/E-commerce/images/im3.jpg" height="575px;" style="float: left;padding: 40px;">
+				<div style="position:absolute;color: white;top: 45%;left:180px;font-size:20px;text-align: center; ">SWOON-WORTHY<br><span style="font-size: 40px;">ACCESSORIES</span></div>
+				<img src="/E-commerce/images/im4.jpg" height="575px;" style="padding: 40px;position: absolute;left:600px; ">
+				<div style="position:absolute;color: white;top: 45%;right:190px;font-size:20px;text-align: center; ">WINTER SALE<br><span style="font-size: 40px;">NOW 30% OFF</span></div>
+			</div>
+		</div>
+		<div class="foot" style="color:#939393;width:100%;height:250px;padding-top:50px;position: relative;font-size: 15px;">
+			<span style="padding-left: 100px;float: left;font-size: 20px;">VESTE</span>
+			<div class="vr"></div>
+			<div class="custom">
+				<span style="font-size: 20px;">CUSTOMER CARE</span><br><br>Shipping Policy><br>Returns policy<br>Contact Us<br>About us
+			</div>
+			<div class="vr" style="left: 50%;"></div>
+			<div style="position: absolute;left: 55%;">
+				<span style="font-size: 20px;">VISIT OUR STORE</span><br><br>ALAKANANDA <br>ROOM NO.148<br>IIT MADRAS<br>
+			</div>
+			<div class="vr" style="left: 75%;"></div>
+			<div style="position: absolute;left: 80%;">
+				<span style="font-size: 20px;">STAY CONNECTED</span><br>
+				<img src="./images/instagram.png">
+				<img src="./images/facebook.png">
+				<img src="./images/twitter.png">
+				<img src="./images/pintrest.png">
+			</div>
 
-#home{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0px 10px;
-}
-#collection{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0px 10px;
-	transition: 0.6s;
-}
-#women,#men,#sale,#accessories{
-	padding: 5px 5px 5px 1px;
-}
-#lookback{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0px 10px;
-}
-#customercare{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0px 10px;
-}
-#visitus{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0px 10px;
-}
-.imgirls{
-	position: relative;
-}
-.imgirlsright{
-	position: absolute;
-	top: 0;
-	left: 625px;
-	color: #313131;
-	padding-top:190px;
-	word-wrap: break-word;
-	justify-content: center;
-	background-color: rgba(255,223,237,1);
-	width: 625px;
-	height: 575px;
-	font-family: arial,helvetica,sans-serif;
-}
-.imboys{
-	position: relative;
-}
-.imboysright{
-    padding-top:190px;
-	top: 0px;
-	left: 0px;
-	color: #313131;
-	word-wrap: break-word;
-	justify-content: center;
-	background-color: rgba(163,189,199,1);
-	width: 625px;
-	height: 575px;
-	font-family: arial,helvetica,sans-serif;
-}
-.imag {
-  position: relative;
-  overflow: hidden;
-}
-.imag img {
-  max-width: 100%;
-  -o-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.imag:hover img {
-    -o-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
-}
-.bt-dat{
-	width: 400px;
-	height: 101px;
-	color:#575757;
-	background-color: #CDCDCD;
-	border-color: transparent;
-	font-family: tahoma;
-}
-.bt-dat:hover,.view:hover,.dresname:hover {
-	background-color: #CCBAB6;
-}
-#view2,#view1,#view3{
-	visibility: hidden;
-}
-.first-image
-{
-	-webkit-animation:bannermove 40s ease-out infinite;
-	-moz-animation:bannermove 40s ease-out infinite;
-	-ms-animation:bannermove 40s ease-out infinite;
-	-o-animation:bannermove 40s ease-out infinite;
-	animation:bannermove 40s ease-out infinite;
-}
-@keyframes "bannermove"{
-	0%{margin-left: 0px;}
-	5%{margin-left:-440px;}
-	10%{margin-left:-440px;}
-	15%{margin-left:-880px;}
-	20%{margin-left:-880px;}
-	25%{margin-left:-1320px;}
-	30%{margin-left:-1320px;}
-	35%{margin-left:-1760px;}
-	40%{margin-left:-1760px;}
-	45%{margin-left:-2200px;}
-	50%{margin-left:-2200px;}
-	55%{margin-left:-2640px;}
-	60%{margin-left:-2640px;}
-	65%{margin-left:-3080px;}
-	70%{margin-left:-3080px;}
-	75%{margin-left:-3520px;}
-	80%{margin-left:-3520px;}
-	85%{margin-left:-3960px;}
-	90%{margin-left:-3960px;}
-	95%{margin-left:-4400px;}
-	100%{margin-left:-4400px;}
-}
-@-moz-keyframes "bannermove"{
-	0%{margin-left: 0px;}
-	5%{margin-left:-440px;}
-	10%{margin-left:-440px;}
-	15%{margin-left:-880px;}
-	20%{margin-left:-880px;}
-	25%{margin-left:-1320px;}
-	30%{margin-left:-1320px;}
-	35%{margin-left:-1760px;}
-	40%{margin-left:-1760px;}
-	45%{margin-left:-2200px;}
-	50%{margin-left:-2200px;}
-	55%{margin-left:-2640px;}
-	60%{margin-left:-2640px;}
-	65%{margin-left:-3080px;}
-	70%{margin-left:-3080px;}
-	75%{margin-left:-3520px;}
-	80%{margin-left:-3520px;}
-	85%{margin-left:-3960px;}
-	90%{margin-left:-3960px;}
-	95%{margin-left:-4400px;}
-	100%{margin-left:-4400px;}
-}
-@-o-keyframes "bannermove"{
-	0%{margin-left: 0px;}
-	5%{margin-left:-440px;}
-	10%{margin-left:-440px;}
-	15%{margin-left:-880px;}
-	20%{margin-left:-880px;}
-	25%{margin-left:-1320px;}
-	30%{margin-left:-1320px;}
-	35%{margin-left:-1760px;}
-	40%{margin-left:-1760px;}
-	45%{margin-left:-2200px;}
-	50%{margin-left:-2200px;}
-	55%{margin-left:-2640px;}
-	60%{margin-left:-2640px;}
-	65%{margin-left:-3080px;}
-	70%{margin-left:-3080px;}
-	75%{margin-left:-3520px;}
-	80%{margin-left:-3520px;}
-	85%{margin-left:-3960px;}
-	90%{margin-left:-3960px;}
-	95%{margin-left:-4400px;}
-	100%{margin-left:-4400px;}
-}
-
-@-webkit-keyframes "bannermove"{
-	0%{margin-left: 0px;}
-	5%{margin-left:-440px;}
-	10%{margin-left:-440px;}
-	15%{margin-left:-880px;}
-	20%{margin-left:-880px;}
-	25%{margin-left:-1320px;}
-	30%{margin-left:-1320px;}
-	35%{margin-left:-1760px;}
-	40%{margin-left:-1760px;}
-	45%{margin-left:-2200px;}
-	50%{margin-left:-2200px;}
-	55%{margin-left:-2640px;}
-	60%{margin-left:-2640px;}
-	65%{margin-left:-3080px;}
-	70%{margin-left:-3080px;}
-	75%{margin-left:-3520px;}
-	80%{margin-left:-3520px;}
-	85%{margin-left:-3960px;}
-	90%{margin-left:-3960px;}
-	95%{margin-left:-4400px;}
-	100%{margin-left:-4400px;}
-}
-a
-{
-	color: black;
-}
-a:hover
-{
-	text-decoration: none;
-	color: grey;
-}
-.vr{
-	width: 2px;
-	background-color: #c7c7c7;
-	position: absolute;
-	float: left;
-	left:25%; 
-	height: 130px;
-}
-.custom{
-	position: absolute;
-	left: 30%;
-}
+			<div style="position:relative;top:160px;color:#cdcdcd	;font-style:helvetica;background-color: #242323;text-align:center;width:100%;height:60px;">
+				<div style="padding-top: 20px">© 2016 by VESTE. Proudly created with nothing</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
