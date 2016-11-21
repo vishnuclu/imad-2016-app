@@ -10,6 +10,7 @@ app.get('/',function(req,res){
 });
 app.get('/E-commerce/main.html',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main.html'));
+   console.alert('Hi');
 });
 app.get('/E-commerce/main-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
