@@ -42,6 +42,11 @@ app.get('/E-commerce/images/im4.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im4.jpg'));
 });
 
+app.get('/E-commerce/images/lookbook/:id',function(req,res){
+    var id = req.params.id;
+   res.sendFile(path.join(__dirname,'E-commerce/Images/lookbook',id));
+});
+
 app.get('/index.html',function(req,res){
     res.send('Article-one is requested and is served here');
 });
