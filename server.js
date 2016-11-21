@@ -20,12 +20,22 @@ app.get('/E-commerce/images/im1.jpg',function(req,res){
 app.get('/E-commerce/images/im2.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im2.jpg'));
 });
+app.get('/E-commerce/images/girlshome1.png',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','girlshome1.png'));
+});
+app.get('/E-commerce/images/boyshome1',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','boyshome1.png'));
+});
+app.get('/E-commerce/images/girlshome2.png',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','girlshome2.png'));
+});
 app.get('/E-commerce/images/im3.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im3.jpg'));
 });
 app.get('/E-commerce/images/im4.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im4.jpg'));
 });
+
 app.get('/index.html',function(req,res){
     res.send('Article-one is requested and is served here');
 });
