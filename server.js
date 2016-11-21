@@ -23,7 +23,7 @@ app.get('/E-commerce/images/im2.jpg',function(req,res){
 app.get('/E-commerce/images/girlshome1.png',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','girlshome1.png'));
 });
-app.get('/E-commerce/images/boyshome1',function(req,res){
+app.get('/E-commerce/images/boyshome1.png',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','boyshome1.png'));
 });
 app.get('/E-commerce/images/girlshome2.png',function(req,res){
