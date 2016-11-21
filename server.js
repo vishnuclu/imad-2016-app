@@ -14,6 +14,12 @@ app.get('/E-commerce/main.html',function(req,res){
 app.get('/E-commerce/main-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','main-style.css'));
 });
+app.get('/E-commerce/lookbook.html',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce','lookbook.html'));
+});
+app.get('/E-commerce/lookbook.css',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce','lookbook.css'));
+});
 app.get('/E-commerce/images/im1.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im1.jpg'));
 });
