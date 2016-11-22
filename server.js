@@ -59,7 +59,7 @@ app.get('/E-commerce/individual-images/:id',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/individual-images',id)); 
 });
 function createTemp(data){
-    var address = '/E-commerce/lookbook/'+data;
+    var address = '/E-commerce/Images/lookbook/'+data;
     var HtmlTemp = `
         <!DOCTYPE html>
         <html>
