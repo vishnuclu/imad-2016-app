@@ -24,6 +24,9 @@ app.get('/E-commerce/lookbook.css',function(req,res){
 app.get('/E-commerce/individual-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','individual-style.css'));
 });
+app.get('/E-commerce/easyzoom.js',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce','easyzoom.js'));
+});
 app.get('/E-commerce/images/im1.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im1.jpg'));
 });
@@ -73,7 +76,7 @@ function createTemp(data){
         	<link rel="preconnect" type="text/css" href="//fonts.googleapis.com">
         	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        	<script src="./easyzoom.js"></script>
+        	<script src="/E-commerce/easyzoom.js"></script>
         </head>
         <body>
         <script type="text/javascript">
