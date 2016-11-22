@@ -13,14 +13,11 @@
 	letter-spacing: 0.2em;
 	min-width: 1200px;
 }
-.container{
-	position: 0px;
-}
 .panel-heading{
-	padding:0px;
+	padding:0;
 }
 .panel-content{
-	padding: 0px;
+	padding: 0;
 	
 }
 .dropdown-menu{
@@ -29,7 +26,7 @@
 #veste{
 	font:normal normal normal 25px/1.4em sans-serif;
 	color: #939393;
-	padding: 5px 10px 0px 10px;
+	padding: 5px 10px 0 10px;
 }
 #veste:hover{
 	color: #FDFDFD;
@@ -40,12 +37,12 @@
 #home{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 #collection{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 	transition: 0.6s;
 }
 #women,#men,#sale,#accessories{
@@ -54,25 +51,25 @@
 #lookback{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 #customercare{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 #visitus{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
-	padding: 0px 10px;
+	padding: 0 10px;
 }
 .easyzoom {
 	position: relative;
 
 	/* 'Shrink-wrap' the element */
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	display: inline;
+	zoom: 1;
 }
 
 .easyzoom img {
