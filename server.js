@@ -21,6 +21,9 @@ app.get('/E-commerce/lookbook.html',function(req,res){
 app.get('/E-commerce/lookbook.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','lookbook.css'));
 });
+app.get('/E-commerce/individual-style.css',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce','individual-style.css'));
+});
 app.get('/E-commerce/images/im1.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im1.jpg'));
 });
@@ -50,9 +53,6 @@ app.get('/E-commerce/images/lookbook/:id',function(req,res){
 app.get('/E-commerce/individual/',function(req,res){
     var que = req.query.image;
     res.send(createTemp(que));
-});
-app.get('/E-commerce/individual-style.css',function(){
-   res.sendFile(path.join(__dirname,'E-commerce','individual-style.css')); 
 });
 app.get('/E-commerce/individual-images/:id',function(req,res){
     var id = req.query.image;
