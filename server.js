@@ -122,18 +122,11 @@ function createTemp(data){
         	</div>
         	<div class="container panel-content">
         		<div style="margin-top: 3%;float: left;">
-        			<div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails is-ready">
+        			<div class="easyzoom easyzoom--overlay is-ready">
         				<a href="${address}" class="im" style="overflow: hidden;width: 640px;height: 620px;">
         					<img src="${address}" alt="im" width="640" height="620" />
         				</a>
         			</div>
-        			<ul class="thumbnails" style="list-style-type: none;">
-        				<li >
-        					<a href="${address}" class="im1">
-        						<img src="${address}" alt="im1" width="80" height="78" />
-        					</a>	
-        				</li>
-        			</ul>
         		</div>
         		<div class="details" style="margin-top:3%;float: right;position: relative;width: 40%;left: 0">
         			<div class="product-name" style="font-size: 25px;" > Name of the product</div>
