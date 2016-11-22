@@ -51,6 +51,9 @@ app.get('/E-commerce/individual/',function(req,res){
     var que = req.query.image;
     res.send(createTemp(que));
 });
+app.get('/E-commerce/individual-style.css',function(){
+   res.sendFile(path.join(__dirname,'E-commerce','individual-style.css')); 
+});
 app.get('/E-commerce/individual-images/:id',function(req,res){
     var id = req.query.image;
    res.sendFile(path.join(__dirname,'E-commerce/individual-images',id)); 
