@@ -46,20 +46,13 @@ body{
 #women,#men,#sale,#accessories{
 	padding: 5px 5px 5px 1px;
 }
-#lookback{
+#lookback,#customercare,#visitus,#login{
 	font:normal normal normal 15px/1.4em sans-serif;
 	color: #939393;
 	padding: 0 10px;
 }
-#customercare{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0 10px;
-}
-#visitus{
-	font:normal normal normal 15px/1.4em sans-serif;
-	color: #939393;
-	padding: 0 10px;
+#login{
+    margin-left:100px;
 }
 .imgirls{
 	position: relative;
