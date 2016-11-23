@@ -48,6 +48,18 @@ app.get('/E-commerce/images/im3.jpg',function(req,res){
 app.get('/E-commerce/images/im4.jpg',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce/Images','im4.jpg'));
 });
+app.get('/E-commerce/images/instagram.png',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','instagram.png'));
+});
+app.get('/E-commerce/images/facebook.png',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','facebook.png'));
+});
+app.get('/E-commerce/images/pintrest.png',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','pintrest.png'));
+});
+app.get('/E-commerce/images/twitter.png',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce/Images','twitter.png'));
+});
 
 app.get('/E-commerce/images/lookbook/:id',function(req,res){
     var id = req.params.id;
