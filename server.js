@@ -115,7 +115,7 @@ function createTemp(data){
         			<ul>
         				<li style="float: left;position: absolute;left: 50px;top: 20px;"><span id="veste"> VESTE</span></li>
         				<ul class="nav nav-pills" style="position: absolute;left: 250px;top: 15px;">
-        					<li ><a href="#" onclick="location.reload();location.href='index.html'"><span id="home"> HOME</span></a></li>
+        					<li ><a href="#" onclick="location.reload();location.href='/E-commerce/main.html'"><span id="home"> HOME</span></a></li>
         					<li class="dropdown">
         						<a href="#" class="dropdown-toggle"><span id="collection">COLLECTION</span></a>
         						<ul class="dropdown-menu" style="background-color: black;color: white;">
@@ -125,7 +125,7 @@ function createTemp(data){
         							<li id="sale"><a href="#" onclick="location.reload();location.href='sale.html'"><span > SALE</span></a></li>
         						</ul>
         					</li>				
-        					<li ><a href="#" onclick="location.reload();location.href='lookbook.html'"><span id="lookback"> LOOKBOOK</span></a></li>
+        					<li ><a href="#" onclick="location.reload();location.href='/E-commerce/lookbook.html'"><span id="lookback"> LOOKBOOK</span></a></li>
         					<li ><a href="#"><span id="customercare"> CUSTOMER CARE</span></a></li>
         					<li ><a href="#"><span id="visitus"> VISIT US</span></a></li>
         				</ul>
