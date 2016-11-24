@@ -1,6 +1,16 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var Pool = require('pg').Pool;
+
+var config = {
+  user:'vishnuclu',
+  database:'vishnuclu',
+  host:'db.imad.hasura-app.io',
+  port:'5432',
+  password: process.env.DB_PASSWORD
+};
+
 
 var app = express();
 app.use(morgan('combined'));
@@ -23,7 +33,7 @@ app.get('/E-commerce/lookbook.css',function(req,res){
 app.get('/E-commerce/individual-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','individual-style.css'));
 });
-app.get('/E-commerce/login.html',function(req,res){
+app.get('/login.html',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','login.html'));
 });
 app.get('/E-commerce/login-style.css',function(req,res){
@@ -71,6 +81,8 @@ app.get('/E-commerce/images/lookbook/:id',function(req,res){
     var id = req.params.id;
    res.sendFile(path.join(__dirname,'E-commerce/Images/lookbook',id));
 });
+
+var pool = new Pool(config);
 app.get('/E-commerce/individual/',function(req,res){
     var que = req.query.image;
     res.send(createTemp(que));
