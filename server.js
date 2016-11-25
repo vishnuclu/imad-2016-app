@@ -33,6 +33,10 @@ app.get('/E-commerce/lookbook.css',function(req,res){
 app.get('/E-commerce/individual-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','individual-style.css'));
 });
+app.get('/login.html/',function(req,res){
+   //res.sendFile(path.join(__dirname,'E-commerce','login.html'));
+});
+
 app.get('/login.html',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','login.html'));
 });
