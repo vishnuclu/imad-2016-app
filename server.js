@@ -35,12 +35,12 @@ app.get('/E-commerce/individual-style.css',function(req,res){
 });
 app.get('/login.html',function(req,res){
    //res.sendFile(path.join(__dirname,'E-commerce','login.html'));
-   res.sendFile(path.join(__dirname,'E-commerce/Images','im1.jpg'));
+   //res.sendFile(path.join(__dirname,'E-commerce/Images','im1.jpg'));
 });
 
-//app.get('/login.html',function(req,res){
- //  res.sendFile(path.join(__dirname,'E-commerce','login.html'));
-//});
+app.get('/login.html',function(req,res){
+   res.sendFile(path.join(__dirname,'E-commerce','login.html'));
+});
 app.get('/E-commerce/login-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','login-style.css'));
 });
