@@ -42,8 +42,8 @@ app.get('/login.html',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','login.html'));
 });
 app.get('/login.html/:id',function(req,res){
-    var name = req.query.name;
-    var email = req.query.email-id;
+    var name = req.query.Firname;
+    var email = req.query.email;
     var password = req.query.password;
    res.sendFile(path.join(__dirname,'E-commerce','lookbook.html'));
 });
