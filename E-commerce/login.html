@@ -47,6 +47,7 @@ $(document).ready(function()
      var Firname = $('.input1').val;
      var email = $('input2').val;
      var password = $('.input3').val;
+     location.reload();
      location.href = "/E-commerce/login.html?name="+Firname+"&email="+email+"password="+password;
   });
 });
@@ -54,7 +55,7 @@ $(document).ready(function()
 </script>
 </head>
 <body>
-<form>
+<div>
 	<label>
 		<input type="text" name="FirName" class="input1"  />
 		<div class="label-text1" id="label-texta">NAME</div>
@@ -68,6 +69,6 @@ $(document).ready(function()
         <div class="label-text3" id="label-textc">PASSWORD</div>
     </label>
 	<button class="submit">SUBMIT</button>
-</form>
+</div>
 </body>
 </html>
