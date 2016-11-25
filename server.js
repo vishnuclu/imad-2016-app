@@ -41,6 +41,12 @@ app.get('/E-commerce/individual-style.css',function(req,res){
 app.get('/login.html',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','login.html'));
 });
+app.get('/login.html/:id',function(req,res){
+    var name = req.query.name;
+    var email = req.query.email-id;
+    var password = req.query.password;
+   res.sendFile(path.join(__dirname,'E-commerce','lookbook.html'));
+});
 app.get('/E-commerce/login-style.css',function(req,res){
    res.sendFile(path.join(__dirname,'E-commerce','login-style.css'));
 });
