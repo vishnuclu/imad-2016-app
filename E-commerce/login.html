@@ -43,7 +43,12 @@ $(document).ready(function()
     $('.label-text3').attr('id','label-textc');
   }
 });
-
+  $('.submit').click(function(){
+     var Firname = $('.input1').val;
+     var email = $('input2').val;
+     var password = $('.input3').val;
+     location.href = "/E-commerce/login.html?name="+Firname+"&email="+email+"password="+password;
+  });
 });
   
 </script>
@@ -51,7 +56,7 @@ $(document).ready(function()
 <body>
 <form>
 	<label>
-		<input type="text" name="FirName" class="input1" />
+		<input type="text" name="FirName" class="input1"  />
 		<div class="label-text1" id="label-texta">NAME</div>
 	</label>
 	<label>
